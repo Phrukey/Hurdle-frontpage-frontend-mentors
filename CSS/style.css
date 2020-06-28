@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(257, 40%, 49%) url(../images/bg-mobile.svg) no-repeat;
+  color: white;
+  margin: 0 auto;
+  width: 80vw;
+  height: 100vh;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+header {
+  height: 13vh;
+  width: 100%;
+  text-align: left;
+}
+
+main .showcase {
+  width: 100%;
+
+}
+
+main .showcase-image img {
+  width: 100%;
+  height: 100%;
+}
+
+main .showcase-details {
+  padding: 40px 10px;
+}
+
+main .showcase-details h2 {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+main .showcase-details p {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 500;
+}
+
+main .showcase-details a {
+  display: inline-block;
+  padding: 10px 65px;
+  margin: 30px 0;
+  text-decoration: none;
+  color: hsl(257, 40%, 49%);
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px 0 rgb(0,0,5,0.8);
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+
+main .showcase-details a:hover{
+  background: hsl(257, 40%, 49%);
+  color: white;
+}
+footer {
+ 
+  bottom: 0;
+  padding: 30px;
+  position: relative;
+}
+
+footer ul {
+  list-style: none;
+  display: inline;
+}
+
+footer li {
+  display: inline;
+  border: 2px white solid;
+  border-radius: 50%;
+  padding: 10px 10px;
+  margin-left: 5px;
+}
+
+footer li:first-child{ padding: 10px 13px;}
+
+footer li i {
+  color: white;
+  size: 1.5rem;
+}
+
+
+@media(max-width: 500px) {
+  header .logo {
+  padding: 30px 0;
+}
+
+header .logo img {
+  width: 40%;
+  height: 80%; 
+}
+
+}
+@media(min-width: 700px) {
+  body {
+    background: hsl(257, 40%, 49%) url(../images/bg-desktop.svg) no-repeat;
+    background-size: cover;
+    width: 90vw;
+  }
+
+  header {
+    height: 13vh;
+    padding: 0px;
+  }
+  header .logo {
+    padding: 20px 0;
+  }
+  
+  main  .showcase {
+    height: 73vh;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+  }
+ 
+  main .showcase-details {
+    text-align: left;
+    padding-top: 20%;
+    padding: 10%;
+  
+  }
+  main .showcase-details p {
+    padding-top: 20px;
+  }
+  main .showcase-details h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;  
+  }
+  main .showcase-details a {
+    padding: 10px 50px;
+    text-align: left;
+  }
+  footer .social {
+    position: absolute;
+    right: 50px;
+    bottom: 8px;
+  }
+}
